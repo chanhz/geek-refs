@@ -15,8 +15,8 @@
 
 ## Golang
 
-- [设计模式](go/Golang设计模式)
-- [包管理](go/gomod)
+- [设计模式](go/Golang设计模式.md)
+- [包管理](go/gomod.md)
 
 ## swift
 
@@ -26,6 +26,6 @@
 
 
 ## 云原生
-- [Kubernetes](cloud-native/kubernetes/#/)
+- [Kubernetes](cloud-native/Kubernetes/README.md)
 - Docker
 - Istio
