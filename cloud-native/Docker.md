@@ -38,6 +38,17 @@ Docker 底层的核心技术包括 Linux 上的命名空间（Namespaces）、�
 - uts
 - user
 
+挂载点：Mount namespaces	CLONE_NEWNS	Linux 2.4.19 -- rootfs 隔离的文件系统
+时间戳、主机名: UTS namespaces	CLONE_NEWUTS	Linux 2.6.19 -- 独立 hostname 和 username
+进程通信:IPC namespaces	CLONE_NEWIPC	Linux 2.6.19 -- 隔离 共享内存、信号量、消息队列 等 
+进程标识:PID namespaces	CLONE_NEWPID	Linux 2.6.24
+网络空间：Network namespaces	CLONE_NEWNET	始于Linux 2.6.24 完成于 Linux 2.6.29
+用户空间:User namespaces	CLONE_NEWUSER	始于 Linux 2.6.23 完成于 Linux 3.8)
+参考：
+https://coolshell.cn/articles/17010.html
+
+
+The UTS namespace is used to isolate two specific elements of the system that relate to the uname system call. UTS is an abbreviation of **UNIX Time Sharing**, a term that dates back to the fledgling days of UNIX, when **multi-user, multi-tasking** operating systems were a novelty.[uts-namespace](https://windsock.io/uts-namespace/)
 
 ### cgroups / namespace
 

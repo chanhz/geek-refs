@@ -24,8 +24,7 @@ Prometheus 项目工作的核心，是使用 Pull （抓取）的方式去搜集
 按 Metrics 数据的来源，可分为：
 - 宿主机的监控数据：需要借助 Prometheus 维护的 Node Exporters 工具。一般来说，该工具以 DaemonSet 的方式运行在宿主机上。这些Metrics 包括节点的负载（Load）、CPU 、内存、磁盘以及网络。[更多指标](https://github.com/prometheus/node_exporter#enabled-by-default)
 - 第二种 Metrics，是来自于 Kubernetes 的 API Server、kubelet 等组件的 metrics API. 除了 CPU 和内存，还包括各个 Controller 的工作队列（Work Queue）的长度、请求的 QPS(Queries_per_second)和延迟数据等等。这些信息，是检查 Kubernetes 本身工作情况的主要依据。
-
- 
+- 第三种，
 
 
 metric 收集的两种设计模式：
